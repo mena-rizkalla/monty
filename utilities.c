@@ -82,8 +82,6 @@ void processInstruction(int i, stack_t **top, char *p, int *mode)
 		else
 			push(top, numcode, mode);
 	}
-	else if (strcmp(clear_ins, "rotr") == 0)
-		rotr(top);
 	else if (strcmp(clear_ins, "stack") == 0)
 		*mode = 0;
 	else if (instructions(i, top, clear_ins) == 1)
